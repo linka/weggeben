@@ -1,0 +1,482 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/b/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Weggeben &alpha; | Отдай книжку другу! </title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+<link rel="shortcut icon" href="/favicon.png"> 
+  <!-- CSS: implied media=all -->
+  <!-- CSS concatenated and minified via ant build script-->
+  <link href='http://fonts.googleapis.com/css?family=Cuprum|Philosopher&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+  <link type="text/css" href="css/Weggeben/jquery-ui-1.8.7.custom.css" rel="stylesheet" />	
+  <link rel="stylesheet" href="css/style.css">
+  <!-- end CSS-->
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+
+
+
+
+
+
+		<style type="text/css">
+			/*demo page css*/
+			
+			.demoHeaders { margin-top: 2em; }
+			ul#icons { margin: 0; padding: 0;}
+			ul#icons li { margin: 2px; position: relative; padding: 4px 0; cursor: pointer; float: left; list-style: none; }
+			ul#icons span.ui-icon { float: left; margin: 0 4px; }
+			.columnbox { width: 500px; }
+			#eq span { height: 120px; float: left; margin: 15px; }
+			#countries { width: 300px; }
+		</style>	
+
+
+
+
+       
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+
+<body class="ui-form onhomepage">
+
+  <div id="container">
+    <header id="top">
+<h1 id="toplogo"><a href="/" title="###">Weggeben &alpha;</a></h1>
+    </header>
+    <div id="main" role="main">
+    <article>
+<p>Тема сознания рассматривается также в двух других известных книгах: «Новый разум императора»
+Роджера Пенроуза (Penrose, The Emperor's New Mind, 1989) и «Объясненное сознание» Даниела Денетта
+(Dennett, Consciousness Explained, 1991). Несмотря на то что чтение этих произведений довольно
+захватывающе, они, к сожалению, не представляют ценности с точки зрения разработки интерфейсов
+«человек-машина». Обобщая, можно сказать, что без непосредственного подтверждения того или иного
+примера функционального параллелизма следует избегать слишком буквального понимания метафор, в
+которых человеческий мозг уподобляется компьютеру.</p><p>Тема сознания рассматривается также в двух других известных книгах: «Новый разум императора»
+Роджера Пенроуза (Penrose, The Emperor's New Mind, 1989) и «Объясненное сознание» Даниела Денетта
+(Dennett, Consciousness Explained, 1991). Несмотря на то что чтение этих произведений довольно
+захватывающе, они, к сожалению, не представляют ценности с точки зрения разработки интерфейсов
+«человек-машина». Обобщая, можно сказать, что без непосредственного подтверждения того или иного
+примера функционального параллелизма следует избегать слишком буквального понимания метафор, в
+которых человеческий мозг уподобляется компьютеру.</p>
+
+
+
+</article>
+
+
+<article id="uielements">
+
+	
+		<h1>jQuery UI!</h1>
+	
+		<!-- Autocomplete -->
+		<h2 class="demoHeaders">Autocomplete</h2>	
+		<div class="ui-widget">
+			<label for="countries">Countries: </label>
+			<input id="countries">
+		</div>
+	
+		<!-- Button -->
+		<h2 class="demoHeaders">UI Button</h2>	
+		<div id="divButton">&lt;DIV&gt; Button</div>
+		<a id="linkButton" href="#">&lt;A href="#"&gt; Button</a>		
+		<input type="button" id="inputButton" value="Input Button" />
+		<input type="submit" id="submitButton" value="Submit Button" />
+		
+		<!-- Icon Buttons -->
+		<h2 class="demoHeaders">Icon Buttons</h2>
+		<div id="leftIconButton">Left Icon</div> <br /><br />
+		<div id="bothIconButton">Left & Right Icons</div>
+		
+		<!-- Button Set -->
+		<h2 class="demoHeaders">Button Toggle</h2>	
+		<div id="radio1">
+			<input type="radio" id="radio1" name="radio" /><label for="radio1">Choice 1</label>
+			<input type="radio" id="radio2" name="radio" checked="checked" /><label for="radio2">Choice 2</label>
+			<input type="radio" id="radio3" name="radio" /><label for="radio3">Choice 3</label>
+		</div>
+	
+		<!-- Horizontal Slider -->
+		<h2 class="demoHeaders">Horizontal Slider</h2>
+		<div id="horizSlider"></div>
+		
+		<!-- Vertical Slider -->
+		<h2 class="demoHeaders">Vertical Slider</h2>
+		<div class="columnbox">
+			<div id="eq">
+				<span>88</span>
+				<span>77</span>
+				<span>55</span>
+				<span>33</span>
+				<span>40</span>
+				<span>45</span>
+				<span>70</span>
+			</div>
+		</div>
+		<br clear="all" />
+		
+		<!-- Highlight / Error -->
+		<h2 class="demoHeaders">Highlight / Error</h2>
+		<div class="ui-widget">
+			<div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;"> 
+				<p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .7em;"></span>
+				<strong>Did you know:</strong> Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
+			</div>
+		</div>
+		<br/>
+		<div class="ui-widget">
+			<div class="ui-state-error ui-corner-all" style="padding: 0 .7em;"> 
+				<p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .7em;"></span> 
+				<strong>Error:</strong> Needs more cowbell. </p>
+			</div>
+		</div>
+		
+		<!-- Accordion -->
+		<h2 class="demoHeaders">Accordion</h2>
+		<div class="columnbox">
+		
+			<div class="accordion">
+
+					<h3><a href="#">Section 1</a></h3>
+					<div>
+						<p>
+						Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+						ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+						amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+						odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+						</p>
+					</div>
+					<h3><a href="#">Section 2</a></h3>
+					<div>
+						<p>
+						Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+						purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+						velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+						suscipit faucibus urna.
+						</p>
+					</div>
+					<h3><a href="#">Section 3</a></h3>
+					<div>
+						<p>
+						Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+						Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+						ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+						lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+						</p>
+						<ul>
+							<li>List item one</li>
+							<li>List item two</li>
+							<li>List item three</li>
+						</ul>
+					</div>
+					<h3><a href="#">Section 4</a></h3>
+					<div>
+						<p>
+						Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+						et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+						faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+						mauris vel est.
+						</p>
+						<p>
+						Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+						Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+						inceptos himenaeos.
+						</p>
+					</div>
+					
+			</div>
+		
+		</div>
+		
+		<!-- Tabs -->
+		<h2 class="demoHeaders">Tabs</h2>
+		<div id="tabs">
+			<ul>
+				<li><a href="#tabs-1">First</a></li>
+				<li><a href="#tabs-2">Second</a></li>
+				<li><a href="#tabs-3">Third</a></li>
+			</ul>
+			<div id="tabs-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget diam nec urna hendrerit tempus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum aliquam ligula non nulla cursus volutpat. Aliquam malesuada felis nec turpis auctor interdum. Cras et lobortis dolor. Nam sodales, dolor eu cursus faucibus, justo leo vestibulum turpis, id malesuada erat ipsum et leo. Integer id aliquam augue. Proin quis risus magna. Vivamus eget accumsan mauris. Vivamus justo ligula, blandit et consequat nec, vulputate a elit. Morbi feugiat metus in ante scelerisque a pulvinar quam condimentum. Suspendisse potenti. Pellentesque convallis scelerisque nunc eget dapibus. Pellentesque ut enim justo. Fusce egestas urna sed nulla placerat iaculis. Cras dignissim tincidunt molestie. Suspendisse rutrum dignissim tortor quis mollis. Sed tempor feugiat ligula in imperdiet. Quisque molestie viverra erat in adipiscing. </div>
+			<div id="tabs-2">Donec porta malesuada massa, at fermentum nunc tincidunt ac. Integer nisi ligula, sodales bibendum interdum id, sodales sit amet orci. In rhoncus libero in purus vestibulum consequat. Aenean vel purus molestie leo pharetra sagittis. In hac habitasse platea dictumst. Quisque bibendum, metus a egestas convallis, est orci dapibus odio, vel pretium ante erat quis ipsum. Praesent at est in odio rhoncus cursus in sollicitudin velit. Aenean auctor molestie hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec volutpat nisl eget nisi consequat pretium. Nullam dui purus, commodo a vestibulum nec, semper varius nulla. </div>
+			<div id="tabs-3">Mauris tempor urna non quam tincidunt aliquam. Proin venenatis metus eu purus interdum a vehicula ipsum sollicitudin. Mauris sed dignissim odio. Nam id odio sed diam dapibus dignissim. Nulla vestibulum nisl ac magna scelerisque adipiscing. Nam pellentesque sapien vulputate nisi scelerisque ut vehicula orci luctus. Sed rhoncus tempor metus vitae egestas. Proin pharetra tristique justo ac rutrum. Vestibulum ac pharetra dolor. Cras nibh arcu, bibendum eget luctus id, rhoncus nec augue. Integer ornare rhoncus nulla, eu aliquam mi ornare ullamcorper. Praesent egestas auctor orci, non rhoncus sapien eleifend at. Quisque eget purus sem, ut dignissim ligula. Etiam sollicitudin dui libero, id ullamcorper metus. </div>
+		</div>
+	
+		<!-- Dialog NOTE: Dialog is not generated by UI in this demo so it can be visually styled in themeroller-->
+		<h2 class="demoHeaders">Modal Dialog</h2>
+		<div id="dialog_link">Open Modal Dialog</div>
+
+		<!-- ui-dialog -->
+		<div id="dialog" title="Dialog Title">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<a href="#" id="buttonInModal" class="uibutton">Change</a>
+		</div>
+	
+		<!-- Datepicker -->
+		<h2 class="demoHeaders">Datepicker</h2>
+		<div id="datepicker"></div>
+		
+		<!-- Progress Bar -->
+		<h2 class="demoHeaders">Progress Bar</h2>
+		<div id="progressbar"></div>
+		<br />
+		<a id="animateProgress" href="#">Animate to random number</a>
+
+		
+	  
+	<h2 class="demoHeaders">Overlay and Shadow Classes <em>(not currently used in UI widgets)</em></h2>
+	<div style="position: relative; width: 70%; height: 200px; padding:1% 4%; overflow:hidden;" class="fakewindowcontain">
+		<p>Lorem ipsum dolor sit amet,  Nulla nec tortor. Donec id elit quis purus consectetur consequat. </p><p>Nam congue semper tellus. Sed erat dolor, dapibus sit amet, venenatis ornare, ultrices ut, nisi. Aliquam ante. Suspendisse scelerisque dui nec velit. Duis augue augue, gravida euismod, vulputate ac, facilisis id, sem. Morbi in orci. </p><p>Nulla purus lacus, pulvinar vel, malesuada ac, mattis nec, quam. Nam molestie scelerisque quam. Nullam feugiat cursus lacus.orem ipsum dolor sit amet, consectetur adipiscing elit. Donec libero risus, commodo vitae, pharetra mollis, posuere eu, pede. Nulla nec tortor. Donec id elit quis purus consectetur consequat. </p><p>Nam congue semper tellus. Sed erat dolor, dapibus sit amet, venenatis ornare, ultrices ut, nisi. Aliquam ante. Suspendisse scelerisque dui nec velit. Duis augue augue, gravida euismod, vulputate ac, facilisis id, sem. Morbi in orci. Nulla purus lacus, pulvinar vel, malesuada ac, mattis nec, quam. Nam molestie scelerisque quam. </p><p>Nullam feugiat cursus lacus.orem ipsum dolor sit amet, consectetur adipiscing elit. Donec libero risus, commodo vitae, pharetra mollis, posuere eu, pede. Nulla nec tortor. Donec id elit quis purus consectetur consequat. Nam congue semper tellus. Sed erat dolor, dapibus sit amet, venenatis ornare, ultrices ut, nisi. Aliquam ante. </p><p>Suspendisse scelerisque dui nec velit. Duis augue augue, gravida euismod, vulputate ac, facilisis id, sem. Morbi in orci. Nulla purus lacus, pulvinar vel, malesuada ac, mattis nec, quam. Nam molestie scelerisque quam. Nullam feugiat cursus lacus.orem ipsum dolor sit amet, consectetur adipiscing elit. Donec libero risus, commodo vitae, pharetra mollis, posuere eu, pede. Nulla nec tortor. Donec id elit quis purus consectetur consequat. Nam congue semper tellus. Sed erat dolor, dapibus sit amet, venenatis ornare, ultrices ut, nisi. </p>
+		
+		<!-- ui-dialog -->
+		<div class="ui-overlay"><div class="ui-widget-overlay"></div><div class="ui-widget-shadow ui-corner-all" style="width: 302px; height: 152px; position: absolute; left: 50px; top: 30px;"></div></div>
+		<div style="position: absolute; width: 280px; height: 130px;left: 50px; top: 30px; padding: 10px;" class="ui-widget ui-widget-content ui-corner-all">
+			<div class="ui-dialog-content ui-widget-content" style="background: none; border: 0;">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+		</div>
+
+	</div>
+	<h2 class="demoHeaders">Combination examples</h2>
+	<div class="columnbox" style="height: 200px;">
+		<div id="tabs2">
+			<ul>
+				<li><a href="#tabs2-1">First</a></li>
+				<li><a href="#tabs2-2">Second</a></li>
+				<li><a href="#tabs2-3">Third</a></li>
+			</ul>
+			<div id="tabs2-1">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget diam nec urna hendrerit tempus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum aliquam ligula non nulla cursus volutpat. Aliquam malesuada felis nec turpis auctor interdum. Cras et lobortis dolor. Nam sodales, dolor eu cursus faucibus, justo leo vestibulum turpis, id malesuada erat ipsum et leo. Integer id aliquam augue. Proin quis risus magna.</p>
+				<a href="#" id="nestedButtonTest_1">Change</a>
+			</div>
+			<div id="tabs2-2">Tab 2</div>
+			<div id="tabs2-3">Tab 3</div>
+		</div>
+	</div>
+	
+	<br />
+	
+	<div class="columnbox" style="height: 200px;">
+		<div id="accordion2">
+			<div>
+				<h4><a href="#">First</a></h4>
+				<div>
+					<p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+					<a href="#" id="nestedButtonTest_2">Change</a>
+				</div>
+			</div>
+			<div>
+				<h4><a href="#">Second</a></h4>
+				<div>Phasellus mattis tincidunt nibh.</div>
+			</div>
+			<div>
+				<h4><a href="#">Third</a></h4>
+				<div>Mauris tempor urna non quam tincidunt aliquam. Proin venenatis metus eu purus interdum a vehicula ipsum sollicitudin. Mauris sed dignissim odio. Nam id odio sed diam dapibus dignissim. Nulla vestibulum nisl ac magna scelerisque adipiscing. Nam pellentesque sapien vulputate nisi scelerisque ut vehicula orci luctus. Sed rhoncus tempor metus vitae egestas. Proin pharetra tristique justo ac rutrum. Vestibulum ac pharetra dolor. Cras nibh arcu, bibendum eget luctus id, rhoncus nec augue. Integer ornare rhoncus nulla, eu aliquam mi ornare ullamcorper. Praesent egestas auctor orci, non rhoncus sapien eleifend at. Quisque eget purus sem, ut dignissim ligula. Etiam sollicitudin dui libero, id ullamcorper metus. </div>
+			</div>
+		</div>
+	</div>
+	
+	<div style="clear:both;">&nbsp;</div>
+		
+	<h2 class="demoHeaders">Common Input Fields</h2>
+	<p>
+		<strong>Input (type: 'text')</strong><br />
+		<input type="text" />
+	</p>
+	<p>
+		<strong>Input (type: 'email' and 'password')</strong><br />
+		<input type="email" /><input type="password" />
+	</p>
+	<p>
+		<strong>Text Area</strong><br />
+		<textarea cols="30"></textarea>
+	</p>
+	<p>
+		<strong>Other Inputs Remain Fine</strong><br />
+		<input type="radio" /> <br />
+		<input type="checkbox" /> <br />
+		<input type="range" /> <br />
+		<input type="file" /> <br />
+		<input type="submit" /> <br />
+		<input type="button" value="Button" /> <br />
+	</p>
+	
+
+</article>
+    </div>
+    <footer>
+
+    </footer>
+  </div> <!--! end of #container -->
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+<script type="text/javascript" src="//code.jquery.com/ui/1.8.13/jquery-ui.min.js"></script>
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script defer src="js/plugins.js"></script>
+  <script defer src="js/script.js"></script>
+  <!-- end scripts-->
+
+
+
+
+
+
+<script type="text/javascript">
+			$(function(){
+
+				// Autocomplete
+				var countryList = ["Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antarctica", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burma", "Burundi", "Cambodia", "Cameroon", "Canada", "Cape Verde", "Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo, Democratic Republic", "Congo, Republic of the", "Costa Rica", "Cote d'Ivoire", "Croatia", "Cuba", "Cyprus", "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "East Timor", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Greece", "Greenland", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hong Kong", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea, North", "Korea, South", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Macedonia", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia", "Moldova", "Mongolia", "Morocco", "Monaco", "Mozambique", "Namibia", "Nauru", "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "Norway", "Oman", "Pakistan", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Qatar", "Romania", "Russia", "Rwanda", "Samoa", "San Marino", " Sao Tome", "Saudi Arabia", "Senegal", "Serbia and Montenegro", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "Spain", "Sri Lanka", "Sudan", "Suriname", "Swaziland", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe"];
+				$("#countries").autocomplete({
+					source: countryList
+				});
+
+				// Accordion
+				$(".accordion").accordion({ header: "h3" });
+	
+				// Tabs
+				$('#tabs').tabs();
+
+				// Dialog			
+				$('#dialog').dialog({
+					autoOpen: false,
+					width: 600,
+					buttons: {
+						"Cancel": function() { 
+							$(this).dialog("close"); 
+						},
+						"Ok": function() { 
+							$(this).dialog("close"); 
+						}
+
+					},
+					modal: true
+				});
+				
+				// Dialog Link
+				$('#dialog_link').button().click(function(){
+					$('#dialog').dialog('open');
+					return false;
+				});
+
+				// Datepicker
+				$('#datepicker').datepicker().children().show();
+				
+				// Horizontal Slider
+				$('#horizSlider').slider({
+					range: true,
+					values: [17, 67]
+				}).width(500);
+				
+				// Vertical Slider				
+				$("#eq > span").each(function() {
+					var value = parseInt($(this).text());
+					$(this).empty().slider({
+						value: value,
+						range: "min",
+						animate: true,
+						orientation: "vertical"
+					});
+				});
+				
+				//hover states on the static widgets
+				$('#dialog_link, ul#icons li').hover(
+					function() { $(this).addClass('ui-state-hover'); }, 
+					function() { $(this).removeClass('ui-state-hover'); }
+				);
+				
+				// Button
+				$("#divButton, #linkButton, #submitButton, #inputButton").button();
+								
+				// Icon Buttons
+				$("#leftIconButton").button({
+					icons: {
+						primary: 'ui-icon-wrench'
+					}
+				});
+				
+				$("#bothIconButton").button({
+					icons: {
+						primary: 'ui-icon-wrench',
+						secondary: 'ui-icon-triangle-1-s'
+					}
+				});					
+				
+				// Button Set
+				$("#radio1").buttonset();
+				
+				
+				// Progressbar
+				$("#progressbar").progressbar({
+					value: 37
+				}).width(500);
+				$("#animateProgress").click(function(event) {
+					var randNum = Math.random() * 90;
+					$("#progressbar div").animate( { width: randNum+"%" } );
+					event.preventDefault();
+				});
+				
+				// Combinations
+				$('#tabs2').tabs();
+				$("#accordion2").accordion({ header: "h4" });
+				$("#buttonInModal").button({
+					icons: {primary: 'ui-icon-wrench'}
+				});
+				
+				// Nested button tests
+				$("#nestedButtonTest_1, #nestedButtonTest_2, #buttonInModal").button().click(function(e) {
+					e.preventDefault();
+				});
+				
+			});
+		</script>
+        
+        
+        
+        
+	
+  <!-- Change UA-XXXXX-X to be your site's ID -->
+  <script>
+    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script>
+
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
+</body>
+</html>

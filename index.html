@@ -1,0 +1,160 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+
+<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/b/378 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Weggeben &alpha; | Отдай книжку другу!</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Mobile viewport optimized: j.mp/bplateviewport -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+<link rel="shortcut icon" href="/favicon.png">
+<!-- CSS: implied media=all -->
+<!-- CSS concatenated and minified via ant build script-->
+<link href='http://fonts.googleapis.com/css?family=Cuprum|Philosopher&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+<link type="text/css" href="css/Weggeben/jquery-ui-1.8.7.custom.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css">
+<!-- end CSS-->
+
+<!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+<!-- All JavaScript at the bottom, except for Modernizr / Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+
+<script src="js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+
+<body class="ui-form onhomepage">
+<div id="container">
+  <header id="top">
+    <h1 id="toplogo"><a href="/" title="Weggeben &alpha;"><img src="img/logo.png" height="74" alt="Weggeben &alpha;" /></a></h1>
+    <nav>
+      <ul class="menu">
+        <li class="topsearch">
+          <fieldset id="topsearch">
+            <input placeholder="Что искать" class="input-search">
+            <input type="button" value="Поиск" class="searchsubmit button">
+          </fieldset>
+        </li>
+        <li><a href="/" class="current">Главная</a></li>
+        <li><a href="/"><img src="https://lh5.googleusercontent.com/-SJxqIsPAuJg/AAAAAAAAAAI/AAAAAAAAAAA/KXsix2jXHVk/s24-c/photo.jpg" alt="i">&nbsp;Мусля Кучикова</a></li>
+        <li><a href="/">Выйти</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="row">
+    <div class="column grid_3">
+      <div class="content side leftbar">
+        <div class="block user"> <a href="/" class="avatar"><img src="https://lh5.googleusercontent.com/-SJxqIsPAuJg/AAAAAAAAAAI/AAAAAAAAAdQ/CEtMqPn5SWk/photo.jpg?sz=64" alt="i"></a> <a href="/" class="name">Мусля Кучикова Мусля</a>
+          <div class="actions"> <a href="/" class="button invite"><span>Пригласить друга</span></a> <a href="/" class="button addbook"><span>Добавить книгу</span></a></div>
+        </div>
+        <div class="block tasklook">
+          <h4>Напоминания <span class="additinal">[2]</span></h4>
+          <ul>
+            <li><a href="/" class="bookname">Прощай, оружие!</a> ждет <a href="/" class="name">Alexey Suslov</a> <span class="additinal">6</span></li>
+            <li><a href="/" class="bookname">Чума</a> можна взять у <a href="/" class="name">Sasha 5A5</a> <span class="additinal">1</span></li>
+          </ul>
+        </div>
+        <div class="block peopleinlook">
+          <h4>Люди в поле зрения <span class="additinal">[4]</span></h4>
+          <ul>
+            <li><a href="/" class="avatar"><img src="https://lh5.googleusercontent.com/-1D1IEJgMXhc/AAAAAAAAAAI/AAAAAAAAAAA/eWHKfR6rz6I/photo.jpg?sz=24" alt="i"></a> <a href="/" class="name">Alexey Suslov</a> <span class="additinal">6</span></li>
+            <li><a href="/" class="avatar"><img src="https://lh5.googleusercontent.com/-SJxqIsPAuJg/AAAAAAAAAAI/AAAAAAAAAdQ/CEtMqPn5SWk/photo.jpg?sz=24" alt="i"></a> <a href="/" class="name">Sasha 5A5</a> <span class="additinal">1</span></li>
+            <li><a href="/" class="avatar"><img src="https://lh5.googleusercontent.com/-Uyl839D99fw/AAAAAAAAAAI/AAAAAAAAAAA/NNNR5lyeQYo/photo.jpg?sz=24" alt="i"></a> <a href="/" class="name">Mi Mi</a> <span class="additinal">4</span></li>
+            <li><a href="/" class="avatar"><img src="https://lh5.googleusercontent.com/-cSjcqjJdoEQ/AAAAAAAAAAI/AAAAAAAAAAA/oq7oX0RZTWs/photo.jpg?sz=24" alt="i"></a> <a href="/" class="name">Oleg Zz</a> <span class="additinal">44</span></li>
+            <li><a href="/" class="more">Показать всех</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="column grid_6">
+      <div class="content">
+        <h3>Лента событий</h3>
+        <div class="event-item"> <a href="/" class="avatar"><img src="https://lh5.googleusercontent.com/-1D1IEJgMXhc/AAAAAAAAAAI/AAAAAAAAAAA/eWHKfR6rz6I/photo.jpg?sz=24" alt="i"></a> <a href="/" class="name">Alexey Suslov</a> добавил в список книгу <a href="/" class="bookname">Приключения
+          черепашки</a>, <span class="bookauthor">Дж. Колбасо</span><span class="date">1 сентября</span></div>
+        <div class="event-item"> <a href="/" class="avatar"><img src="https://lh5.googleusercontent.com/-Uyl839D99fw/AAAAAAAAAAI/AAAAAAAAAAA/NNNR5lyeQYo/photo.jpg?sz=24" alt="i"></a> <a href="/" class="name">Mi Mi</a> взял у <a href="/" class="avatar"><img src="https://lh5.googleusercontent.com/-cSjcqjJdoEQ/AAAAAAAAAAI/AAAAAAAAAAA/oq7oX0RZTWs/photo.jpg?sz=24" alt="i"></a> <a href="/" class="name">Oleg Zz</a> <a href="/" class="bookname">Три мушкетера</a>, <span class="bookauthor">А. Дюма</span><span class="date">1 сентября</span></div>
+        <div class="event-item"> Sasha 5A5 зарегистрировался на сайте<span class="date">1 сентября</span></div>
+        <div class="event-item"> Andrey Skop оставил отзыв на книгу <a href="/" class="bookname">Синяя птица</a>, <span class="bookauthor">А. Клопик</span><span class="date">1 сентября</span></div>
+        <div class="event-item"> Mi Mi встал в очередь на книгу <a href="/" class="bookname">Прощай, оружие!</a>, <span class="bookauthor">Э.Хемингуэй</span><span class="date">1 сентября</span></div>
+        <div class="event-item"> Andrey Skop отдал Alex Muxa <a href="/" class="bookname">Синяя птица</a>, <span class="bookauthor">А. Клопик</span><span class="date">1 сентября</span></div>
+        <div class="event-item"> Oleg Zz оставил отзыв на книгу <a href="/" class="bookname">Сказки Средиземноморья</a>, <span class="bookauthor">А. Клопик</span><span class="date">1 сентября</span></div>
+        <div class="event-item"> Mi Mi встал в очередь на книгу <a href="/" class="bookname">Прощай, оружие!</a>, <span class="bookauthor">Э.Хемингуэй</span><span class="date">1 сентября</span></div>
+        <div class="event-item"> Sasha 5A5 зарегистрировался на сайте<span class="date">1 сентября</span></div>
+        <div class="event-item"> Andrey Skop оставил отзыв на книгу <a href="/" class="bookname">Чума</a>, <span class="bookauthor">А. Камю</span><span class="date">1 сентября</span></div>
+        <div class="event-item"> Alexey Suslov добавил в список книгу <a href="/" class="bookname">Государство</a>, <span class="bookauthor">Платон</span><span class="date">1 сентября</span></div>
+        <div class="event-item"> Mua взял у Lodik <a href="/" class="bookname">Три мушкетера</a>, <span class="bookauthor">А. Дюма</span> </div>
+        <a class="more">&larr; Более ранние</a> </div>
+    </div>
+    <div class="column grid_3">
+      <div class="content side rightbar">
+        <div class="block bookinqueue">
+          <h4>В очереди за книгами <span class="additinal">[4]</span></h4>
+          <ul>
+            <li><a href="/" class="avatar"><img src="https://lh5.googleusercontent.com/-1D1IEJgMXhc/AAAAAAAAAAI/AAAAAAAAAAA/eWHKfR6rz6I/photo.jpg?sz=24" alt="i"></a> <a href="/" class="name">Alexey Suslov</a> <span class="additinal">6</span></li>
+            <li><a href="/" class="avatar"><img src="https://lh5.googleusercontent.com/-SJxqIsPAuJg/AAAAAAAAAAI/AAAAAAAAAdQ/CEtMqPn5SWk/photo.jpg?sz=24" alt="i"></a> <a href="/" class="name">Sasha 5A5</a> <span class="additinal">1</span></li>
+            <li><a href="/" class="avatar"><img src="https://lh5.googleusercontent.com/-Uyl839D99fw/AAAAAAAAAAI/AAAAAAAAAAA/NNNR5lyeQYo/photo.jpg?sz=24" alt="i"></a> <a href="/" class="name">Mi Mi</a> <span class="additinal">4</span></li>
+            <li><a href="/" class="avatar"><img src="https://lh5.googleusercontent.com/-cSjcqjJdoEQ/AAAAAAAAAAI/AAAAAAAAAAA/oq7oX0RZTWs/photo.jpg?sz=24" alt="i"></a> <a href="/" class="name">Oleg Zz</a> <span class="additinal">44</span></li>
+            <li><a href="/" class="more">Показать всех</a></li>
+          </ul>
+        </div>
+        <div class="block bookinlook" title="Книги за которыми ты следишь">
+          <h4>Книги в поле зрения <span class="additinal">[4]</span></h4>
+          <ul>
+            <li><a href="/" class="avatar"><img src="https://lh5.googleusercontent.com/-1D1IEJgMXhc/AAAAAAAAAAI/AAAAAAAAAAA/eWHKfR6rz6I/photo.jpg?sz=24" alt="i"></a> <a href="/" class="name">Alexey Suslov</a> <span class="additinal">6</span></li>
+            <li><a href="/" class="avatar"><img src="https://lh5.googleusercontent.com/-SJxqIsPAuJg/AAAAAAAAAAI/AAAAAAAAAdQ/CEtMqPn5SWk/photo.jpg?sz=24" alt="i"></a> <a href="/" class="name">Sasha 5A5</a> <span class="additinal">1</span></li>
+            <li><a href="/" class="avatar"><img src="https://lh5.googleusercontent.com/-Uyl839D99fw/AAAAAAAAAAI/AAAAAAAAAAA/NNNR5lyeQYo/photo.jpg?sz=24" alt="i"></a> <a href="/" class="name">Mi Mi</a> <span class="additinal">4</span></li>
+            <li><a href="/" class="avatar"><img src="https://lh5.googleusercontent.com/-cSjcqjJdoEQ/AAAAAAAAAAI/AAAAAAAAAAA/oq7oX0RZTWs/photo.jpg?sz=24" alt="i"></a> <a href="/" class="name">Oleg Zz</a> <span class="additinal">44</span></li>
+            <li><a href="/" class="more">Показать всех</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>2011, Weggeben.</p>
+  </footer>
+</div>
+<!--! end of #container --> 
+
+<!-- JavaScript at the bottom for fast page loading --> 
+
+<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline --> 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> 
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script> 
+<script type="text/javascript" src="//code.jquery.com/ui/1.8.13/jquery-ui.min.js"></script> 
+
+<!-- scripts concatenated and minified via ant build script--> 
+<script defer src="js/plugins.js"></script> 
+<script defer src="js/script.js"></script> 
+<!-- end scripts--> 
+
+<!-- Change UA-XXXXX-X to be your site's ID --> 
+<script>
+    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script> 
+
+<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started --> 
+<!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+
+</body>
+</html>
